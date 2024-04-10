@@ -135,4 +135,32 @@ header::after {
   transform: translateX(10px);
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #488C03;
+  color: white;
+  z-index: 2;
+  font-size: 2.2rem;
+}
+
+.logo {
+  flex-basis: 50%;
+  padding-left: 30px;
+}
+
+.menu {
+  flex-basis: 50%;
+  text-align: right;
+  padding-right: 30px;
+}
+.menu span {
+  font-size: 3.6rem;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -8,3 +8,18 @@
         @content;
     }
 }
+
+//Tworzę tak zwane Parametry
+
+// @mixin box-square($size, $border-color) {
+//     width: $size;
+//     height: $size;
+//     border: 1px solid $border-color;
+// }
+
+// .test {
+//     @include box-square(300px, red)
+// }
+// .test2 {
+//     @include box-square(400px,blue)
+// }
