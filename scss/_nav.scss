@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 nav {
     position: fixed;
@@ -12,6 +13,9 @@ nav {
     color: white;
     z-index: 2;
     font-size: 2.2rem;
+    .material-icons {
+        cursor: pointer;
+    }
 }
 
 .logo {
@@ -23,8 +27,44 @@ nav {
     flex-basis: 50%;
     text-align: right;
     padding-right: 30px;
-    
+    cursor: pointer;
     span {
         font-size: 3.6rem;
     }
+}
+
+.div-menu {
+    background-color: rgba(0, 0, 0, 0.61);
+    color: #fff;
+    width: 100%;
+    @include lg {
+        width: 25%;
+    }
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+
+    li {
+        padding: 20px;
+    }
+
+}
+
+.hide-menu {
+    display: none;
+}
+
+.material-icons {
+    color: inherit;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 40px;
+    cursor: pointer;
 }

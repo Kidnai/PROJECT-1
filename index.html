@@ -21,13 +21,30 @@
             <a href="index.html">Pizza Kraków</a>
         </div>
         <div class="menu">
-            <a href="">
                 <span class="material-icons">
                     menu
                 </span>
-            </a>
         </div>
     </nav>
+    <div class="div-menu hide-menu">
+        <span class="material-icons">
+            close
+        </span>
+        <ul>
+            <li>
+                <a href="#about">O nas</a>
+            </li>
+            <li>
+                <a href="#menu" id="Menu">Menu</a>
+            </li>
+            <li>
+                <a href="#localization" id="Lokalizacja">Lokalizacja</a>
+            </li>
+            <li>
+                <a href="#contact" id="Kontakt">Kontakt</a>
+            </li>
+        </ul>
+    </div>
     <header>
         <div class="header-box">
             <h1>Najlepsza pizza w Krakowie</h1>
@@ -106,14 +123,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
+                        <div id="resultPlace"></div>
                         <form autocomplete="off">
                             <label for="email">Podaj Twój email:</label>
-                            <input id="email" type="email" required>
+                            <input id="email" type="email">
                             <label for="title">Tytuł Wiadomości:</label>
-                            <input id="title" required>
+                            <input id="title">
                             <label for="title">Treść Wiadomości: </label>
-                            <textarea name="" id="message" cols="50" rows="10" required></textarea>
-                            <input type="submit" required value="Wyślij Wiadomość">
+                            <textarea name="" id="message" cols="50" rows="10"></textarea>
+                            <input type="submit" value="Wyślij Wiadomość">
                         </form>
                     </div>
                 </div>
